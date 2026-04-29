@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+@import url('https://www.dafont.com/pt/magic-2.font');
+
+@font-face{
+    font-family:'Magic';
+    src:url('fonte/Magic.otf') format ('opentype');
+    font-weight: normal;
+}   
+
+
+:root{
+    --cor1:red;
+    --cor2:red;
+    --cor3:red;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque:'Magic', sans-serif;
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    font-family:var(--font-destaque);
+    background-color:;
+}
+
+.cabecalho {
+    background-color:rgb(14, 0, 38);
+    display: flex;
+    justify-content: center;
+    padding: 45px;
+    margin: auto;
+    margin-bottom: 60px; 
+}
+
+.container {
+    margin: auto;
+    max-width:1170px;
+    color: black;
+}
+
+.container .product {  
+    font-size:25px;
+    font-weight: 500;
+    margin-bottom:35px;
+    line-height:35px;
+    letter-spacing: 3px;
+}
+
+.container .filtros {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+}
+
+.container .categoria-cartas {
+    display:flex;
+    flex-direction: column;
+    width:410px;
+    height: 18px;
+}
+.container .preço-cartas {
+    display:flex;
+    flex-direction: column;
+    width: 45%;
+    height: 5px;
+}
+
+.container label {
+    letter-spacing: 2px;
+    font-weight: 500;
+    color:#6528D3;
+}
+
+.container .categoria-cartas select, .container .preço-cartas input {
+    padding: 13px 13px;
+    background-color: #F2EEFA;
+    color:rgb(15, 0, 45);
+    height:55px;
+}
+
+.container  select:focus, 
+.container  input:focus,
+.container  select:focus-visible,
+.container  input:focus-visible {
+    outline:none;
+}
+
+.container .categoria {
+    appearance: none;
+    background: url('../image/seta-para-baixo.png') 97% center no-repeat;
+}
+
+.container .filtros .btn-filtrar{
+    border:none;
+    background-color: #6528D3
+    color: #EDEDED;
+    padding: 8px 20px;
+    font-weight: 400;
+    align-self: end;
+    width: 180px;
+    height: 65px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition:0.4s;
+}
+
+
+.container .filtros .btn-filtrar:hover {
+    background-color:rgb(106, 52, 206);
+}
+
+.container .cartas {
+    display: flex;
+    flex-wrap:wrap;
+    gap:32px;
+    margin-top:32px;
+}
+
+.container .cartas .carta{
+    max-width: 365px;
+    background-color:rgb(210, 163, 163);
+    color: #0E0027;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgb(0,0,0,0,10);
+    margin: auto;
+}
+
+.container .carta .img {
+    width: 100%;
+    padding: 20px;
+}
+
+.container .carta .Informaçoes{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container .carta .Informaçoes .nome-persongem{
+    font-size: 25px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.container .carta .Informaçoes .categoria{
+    color: #7E7E7E;
+    font-weight: 700;
+}
+
+.container .carta .Informaçoes .preço-cartas{
+    font-size:25px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color:#4D8ESC;
+}
+
+.container .carta .Informaçoes .btn-comprar{
+    color: #EDEDED;
+    background-color: #6528D3;
+    padding: 16px;
+    border-radius: 2px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container .carta .Informaçoes .btn-comprar:hover{
+    background-color:  #33008F;
+}
+
+.rodape{
+    background-color: #6528d3;
+    display: flex;
+    justify-content: center;
+    color: #ededed;
+    padding: 10px;
+    margin-top: 68px;
+}
+
+.esconder {
+    display: none;
+}
+
+.mostrar{
+    display: block;
+}

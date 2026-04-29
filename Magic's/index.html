@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Magic's</title>
+
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="image/logo.png" alt="Logo Magick">
+    </header>
+
+    <main class="container">
+        <h1 class="product">Produtos</h1>
+        <div class="filtros">
+            <div class="categoria-cartas">
+                    <label for="categoria">Categoria</label>
+            <select id="categoria" class="categoria">
+                <option value="Selecione um carta"> Selecione uma carta </option>
+                <option value="comum">Comum</option>
+                <option value="rara">Rara</option>
+                <option value="épica">Épica</option>
+
+            </select>
+            </div>
+
+            <div class="preço-cartas">
+                <label for="preço">Preço Maximo (R$)</label>
+                <input type="text" id="preço" class="preço" placeholder="Ex: 100">
+                
+            </div>
+            <button class="btn-filtrar">Aplicar filtros</button>
+
+        </div>
+
+        <ul class="cartas">
+            <li class= "carta" data-categoria="Épica" data-preco="3000">
+                <img src="image/carta-arkanon.png" alt="Arkanon">
+
+                <div class="Informaçoes">
+                    <h2 class="nome-personagem">Arkanon</h2>
+                    <span class="categoria"> Categoria: Épica</span>
+                    <span class="preço">R$ 3.000,00</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+        
+        <li class="carta" data-categoria="comum" data-preco="6000">
+                <img src="image/carta-drahven.png" alt="Drahven">
+
+                <div class="Informaçoes">
+                    <h2 class="nome-personagem">Draven</h2>
+                    <span class="categoria"> Categoria: Épica</span>
+                    <span class="preço">R$ 6000,00</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <li class="carta" data-categoria="Épica" data-preco="800">
+                <img src="image/carta-kaelthar.png" alt="Kaelthar">
+
+                <div class="Informaçoes">
+                    <h2 class="nome-personagem">Kaelthar</h2>
+                    <span class="categoria"> Categoria: Épica</span>
+                    <span class="preço">R$ 8000,00</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <li class="carta" data-categoria="Épica" data-preco="4000">
+                <img src="image/carta-lymara.png" alt="Lymara">
+
+                <div class="Informaçoes">
+                    <h2 class="nome-personagem">Lymara</h2>
+                    <span class="categoria"> Categoria: Épica</span>
+                    <span class="preço">R$ 4000,00</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <li class="carta" data-categoria="Épica" data-preco="2000">
+                <img src="image/carta-maldrik.png" alt="Maldrik">
+
+                <div class="Informaçoes">
+                    <h2 class="nome-personagem">Maldrik</h2>
+                    <span class="categoria"> Categoria: Épica</span>
+                    <span class="preço">R$ 2000,00</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <li class="carta" data-categoria="Comum" data-preco="1000">
+                <img src="image/carta-nyxsombra.png" alt="Nyxsombra">
+
+                <div class="Informaçoes">
+                    <h2 class="nome-personagem">Nyxsombra</h2>
+                    <span class="categoria"> Categoria: Épica</span>
+                    <span class="preço">R$ 1000,00</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer class="rodape">@2025</footer>
+</body>
+</ht

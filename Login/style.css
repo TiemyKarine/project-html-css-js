@@ -1,0 +1,171 @@
+:root{
+    --fonte: "DM Sans", sans-serif;
+    --fonte-primaria:Times New Roman,sans-serif;
+    --fonte-sec: Arial, sans-serif;
+    --cor-primaria: #E6E6FA;
+    --cor-sec:#DDA0DD;
+    --cor-terc:#BA55D3;
+}
+
+    @import url('https://www.dafont.com/pt/kg-lego-house.font');
+
+    @font-face{
+        font-family:"KGLegoHouse";
+        src:url(fonte/KGLegoHouse.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "KGLegoHouse", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #09091f, #501750, rgb(0, 0, 0));
+    width: 100%;
+}
+
+.ring{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 600px;
+    height: 510px;
+    font-style: oblique;
+    color: black;
+}
+
+.ring i{
+    transition: 0.5s;
+    position: absolute;
+    border: 2px solid #fff;
+    inset: 0;
+}
+
+.ring i:nth-child(1){
+    border-radius: 25% 42% 53% 17%/ 61% 24% 46% 59%;
+    animation: animate 6s linear infinite;
+}
+
+.ring i:nth-child(2){
+    border-radius: 71% 74% 86% 59%/78% 92% 73% 87%;
+    animation: animate 4s linear infinite;
+}
+
+.ring i:nth-child(3){
+    border-radius: 71% 84% 66% 59%/58% 62% 63% 87%;
+    animation: animate 3s linear infinite;
+}
+
+.ring:hover i{
+    border: 2px solid var(--clr);
+    filter: drop-shadow(0 0 10px var(--clr));
+}
+
+@keyframes animate{
+    0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.login{
+    text-align: center;
+}
+
+.login h2 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.login .inputBx {
+    width: 100%;
+}
+
+.login .inputBx input {
+    width: 100%;
+    padding: 5px 10px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    font-size: 1.2em;
+    color: #fff;
+    box-shadow: none;
+}
+
+.login .inputBx input[type="submit"] {
+    width: 100%;
+    background: #0078ff;
+    background: linear-gradient(45deg, #5eff00, #fa0376);
+    border: none;
+    cursor: pointer;
+}
+
+.login .inputBx input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.login .links {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.login .links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#email{
+    margin: 0 15px;
+    border-radius: 6px 6px 6px 6px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+#psswrd{
+    margin: 0 15px;
+    border-radius: 6px 6px 6px 6px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+#login{
+    margin: 20px 15px;
+    border-radius: 20px 20px 20px 20px;
+    padding: 8px 10px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.links{
+    font-size: 10px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    
+}
