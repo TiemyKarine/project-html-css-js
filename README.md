@@ -1,2 +1,2 @@
 # Github
-Project
+Project HTML, CSS and JS
