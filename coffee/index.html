@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kawaii Coffee</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><!---->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text"> Kawaii Coffee </h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                
+                <li class="nav-item">
+                    <a href="#home"  class="nav-link"> Home </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#about"  class="nav-link"> About </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#menu"  class="nav-link"> Menu </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#testimonails"  class="nav-link"> Testimonails </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#galery"  class="nav-link"> Gallery </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contact"  class="nav-link"> Contact </a>
+                </li>
+                
+            </ul>
+
+            <button id="menu-open-button" class="fas fa-bar"></button>
+        </nav>
+    </header>
+
+    <!--description-->
+    <main>
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Cute Coffee!</h2>
+                    <h3 class="subtitle"> Make your day great with our special coffee!</h3>
+                    <p class="description"> Welcome to our coffee paradise, every bean tells a story and cup sparks joy!Let's go for coffee ~ </p>
+
+                    <div class="buttons">
+                        <a href="#" class="button order-now">Order Now</a>
+                        <a href="#" class="button contact-us">Contact </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <img src="img/coffee-hero-section.png" alt="Hero" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+    <!--about us-->
+    <section class="about-section"id="about">
+        <div class="section-content">
+            <div class="about-image-wrapper">
+                <img src="img/about-image.jpg" alt="About Image" class="about-image">
+            </div>
+            <div class="about-details">
+                <h2 class="section-title"> About Us</h2>
+                <p class="text">
+                    At Coffee House in Sao Paulo, Brazil, we pride ourtselves on being a go-to destination for coffee lovers. We're dedication to providing an exception coffee experiece in a cozy, inviting where guests can relax and enjoy their time in comfort. 
+                </p>
+
+                <div class="social-link">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"><i></a>
+                    
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"><i></a>
+
+                    <a href="#" class="social-link"><i class="fa-brands fa-twitter"><i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--Menu list-->
+    <section class="menu-section" id="menu">
+        <h2 class="section-title"> Menu</h2>
+        <div class="section-content">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <img src="img/hot-beverages.png" alt="Hot Beverages" class="menu-image">
+                    <h3 class="name"> Hot Beverages </h3>
+                    <p class="text"> Wide range of Steaming hot coffee to make you fresh and light</p>
+                </li>
+
+
+                <li class="menu-item">
+                    <img src="img/cold-beverages.png" alt="Cold Beverages" class="menu-image">
+                    <h3 class="name"> Cold Beverages</h3>
+                    <p class="text"> Refreshing cold drinks to cool you down</p>
+                </li>
+
+                <li class="menu-item">
+                    <img src="img/desserts.png" alt="Desserts" class="menu-image">
+                    <h3 class="name"> Desserts</h3>
+                    <p class="text"> Sweet treats to satisfy your sweet tooth</p>
+                </li>
+
+                <li class="menu-item">
+                    <img src="img/burger-frenchfries.png" alt="Burgers and Fries" class="menu-image">
+                    <h3 class="name"> Burgers and Fries</h3>
+                    <p class="text"> Delicious burgers and crispy fries to satisfy your hunger</p>
+                </li>
+
+
+                <li class="menu-item">
+                    <img src="img/special-combo.png" alt="Special Combos" class="menu-image">
+                    <h3 class="name"> Special Combos</h3>
+                    <p class="text"> Exclusive deals and combinations to satisfy your cravings</p>
+                </li>
+
+                <li class="menu-item">
+                    <img src="img/refreshment.png" alt="Refreshments" class="menu-image">
+                    <h3 class="name"> Refreshments</h3>
+                    <p class="text"> A variety of snacks and light meals to complement your drink</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--testimonials-->
+    <section class="testimonials-section" id="testimonails">
+        <h2 class="section-title">Testimonails</h2>
+        <div class="section-content">
+            <div class="slider-container swiper">
+                <div class="slider-wrapper">
+                    <ul class="testimonials-list swiper-wrapper">
+                        <li class="testimonial swiper-slide">
+                            <img src="img/user-1.jpg" alt="User" class="user-image">
+                            <h3 class="name"> Kate Diana</h3>
+                            <i class="feedback"> "Great coffee and friendly service!"</i>
+                        </li>
+
+                        <li class="testimonial swiper-slide">
+                            <img src="img/user-2.jpg" alt="User" class="user-image">
+                            <h3 class="name"> John Kin</h3>
+                            <i class="feedback"> "Excellent food and great atmosphere!"</i>
+                        </li>
+
+                        <li class="testimonial swiper-slide">
+                            <img src="img/user-3.jpg" alt="User" class="user-image">
+                            <h3 class="name"> Pieri Mike</h3>
+                            <i class="feedback">"Very tasty, pleasant atmosphere, excellent coffee (house-produced). Service met standard expectations."</i>
+                        </li>
+
+                        <li class="testimonial swiper-slide">
+                            <img src="img/user-4.jpg" alt="User" class="user-image">
+                            <h3 class="name"> Sophie Saya</h3>
+                            <i class="feedback"> "Charming décor and delicious coffees!!! The iced gourmet coffees are an excellent choice for the heat!!! The cakes and pies don't disappoint either!!!"</i>
+                        </li>
+
+                        <li class="testimonial swiper-slide">
+                            <img src="img/user-5.jpg" alt="User" class="user-image">
+                            <h3 class="name"> Kon Teng</h3>
+                            <i class="feedback"> "The best coffee shop in the area! There’s nothing better! Haha. Beyond the coffee—which is the most delicious—the pies, the savory snacks... wow! You have to try everything. Excellent service and a really lovely atmosphere."</i>
+                        </li>
+
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--galery-->
+    <section class="gallery-section" id="galery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="img/gallery-1.jpg" alt="Gallery Image" class="gallery-image">
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="img/gallery-2.jpg" alt="Gallery Image" class="gallery-image">
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="img/gallery-3.jpg" alt="Gallery Image" class="gallery-image">
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="img/gallery-4.jpg" alt="Gallery Image" class="gallery-image">
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="img/gallery-5.jpg" alt="Gallery Image" class="gallery-image">
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="img/gallery-6.jpg" alt="Gallery Image" class="gallery-image">
+                    </li>
+                </ul>
+            </div>
+        </div>  
+
+    </section>
+
+    <!--Contact-->
+    <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="section-content">
+            <ul class="contact-info-list">
+                <li class="contact-info">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <p> Street Paulista, Sao Paulo</p>
+                </li>
+
+                <li class="contact-info">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <p> info@kawaiicoffee.com.br</p>
+                </li>
+
+                <li class="contact-info">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <p> (11) 3825-4485</p>
+                </li>
+
+                <li class="contact-info">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <p> Tuesday - Sunday: 8:00 AM - 19:00 PM</p>
+                </li>
+
+                <li class="contact-info">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <p> Monday: Closed</p>
+                </li>
+            </ul>
+            
+            <form action="#" class="contact-form">
+                <input type="text" class="form-input" placeholder="Your Name">
+                <input type="email" class="form-input" placeholder="Your Email">
+                <textarea class="form-input" placeholder="Your Message"></textarea>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text"> &copy; 2026 Kawaii Coffee. All rights reserved.</p>
+
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a> 
+                </div>
+
+                <p class="policy-text">
+                    <a href="#" class="policy-link"> Privacy Policy</a> 
+                    <span class="separaton">  
+                    </span>
+                    <a href="#" class="policy-link"> Terms of Service</a>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <!--Link script swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
