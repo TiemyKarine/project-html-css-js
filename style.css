@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+:root{
+    --font-size-s: 300;
+    --font-size-m: 500;
+    --font-size-l: 800;
+
+    --color-rosa: #F5D0D9;
+    --color-black: #211818;
+    --color-red: #910022;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--color-rosa);
+    color: var(--color-black);
+    font-size: 15px;
+    font-family:'Outfit', sans-serif;
+    min-height: 100vh;
+    padding: 2rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-main{
+    background: white;
+    max-width: 735px;
+    border-radius: 25px;
+    padding: 40px;
+}
+
+/*descript*/
+
+.title-header{
+    margin-top: 1.5rem;
+}
+
+.img-title {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 33px;
+    display: block;
+}
+
+.omelete-title{
+    font-family: 'Outfit', sans-serif;
+    color: var(--color-black);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.4rem;
+    line-height: 1;
+}
+
+.omelete-description{
+    line-height: 1.5;
+}
+
+/*tempo*/
+.timer-prep{
+    color: var(--color-black);
+    padding: 0.5rem;
+    margin: 0.75rem 0;
+}
+
+.timer-prep h3{
+    color: var(--color-red);
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.timer-prep ul{
+    padding-left: 1.5rem;
+}
+
+.timer-prep li{
+    margin-bottom: 0.55rem;
+    padding-left: 0.5rem;
+    color: var(--color-black);
+}
+
+/*ingredients*/
+.ingredients h3{
+    color: var(--color-red);
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.ingredients ul{
+    padding-left: 1.8rem;
+}
+
+.ingredients li{
+    margin-bottom: 0.55rem;
+    padding-left: 0.5rem;
+    line-height: 1.5;
+}
+
+
+/*instruction*/
+.instruction h3{
+    color: var(--color-red);
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1.6rem;
+}
+
+.instruction ol{
+    padding-left: 1.8rem;
+}
+
+.instruction li{
+    margin-bottom: 0.55rem;
+    padding-left: 0.5rem;
+    line-height: 1.5;
+}
+
+/*nutrition*/
+.nutrition h3{
+    color: var(--color-red);
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1.6rem;
+}
+
+.nutrition p{
+    margin-bottom: 1.2rem;
+}
+
+
+.nutrition table{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.6rem;
+    font-size: 1rem;
+}
+
+
+.nutrition td{
+    color: bold black;
+    font-size: 1.1rem;
+}
+
+.nutrition .value{
+    color: var(--color-red);
+    font-weight: 600;
+    padding: 0.75rem 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
