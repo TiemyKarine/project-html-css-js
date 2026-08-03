@@ -1,0 +1,212 @@
+/* RESET & VARIAVEIS */
+:root {
+  /* Cores dos Cards */
+  --work: hsl(15, 100%, 70%);
+  --play: hsl(195, 74%, 62%);
+  --study: hsl(348, 100%, 68%);
+  --exercise: hsl(145, 58%, 55%);
+  --social: hsl(264, 64%, 52%);
+  --self-care: hsl(43, 84%, 65%);
+
+  /* Cores Neutras */
+  --bg-dark: #0d1323;
+  --card-bg: #1d204b;
+  --card-hover: #34397b;
+  --profile-bg: #5746ea;
+  --text-primary: #ffffff;
+  --text-secondary: #7078c9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* LAYOUT GRID */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  width: 100%;
+  max-width: 1050px;
+}
+
+/* ESTILO GERAL DOS CARDS */
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* PROFILE CARD */
+.profile-card {
+  background-color: var(--card-bg);
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info {
+  background-color: var(--profile-bg);
+  padding: 30px;
+  border-radius: 15px;
+  flex: 1;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 35px;
+}
+
+.subtitle {
+  color: #bbc0ff;
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+}
+
+.profile-info h1 {
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.profile-timeframes {
+  padding: 25px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.timeframe-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.timeframe-btn:hover,
+.timeframe-btn.active {
+  color: var(--text-primary);
+}
+
+/* CARDS DE ATIVIDADE */
+.activity-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 40px;
+}
+
+/* Cores do Topo dos Cards */
+.work { background-color: var(--work); }
+.play { background-color: var(--play); }
+.study { background-color: var(--study); }
+.exercise { background-color: var(--exercise); }
+.social { background-color: var(--social); }
+.self-care { background-color: var(--self-care); }
+
+.card-content {
+  background-color: var(--card-bg);
+  border-radius: 15px 15px 0 0;
+  padding: 28px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-content:hover {
+  background-color: var(--card-hover);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-header h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.menu-btn:hover {
+  color: var(--text-primary);
+}
+
+.card-body .current-time {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.card-body .previous-time {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* RESPONSIVIDADE (MOBILE) */
+@media (max-width: 850px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .profile-card {
+    grid-row: span 1;
+  }
+
+  .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+  }
+
+  .avatar {
+    margin-bottom: 0;
+  }
+
+  .profile-timeframes {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-body .current-time {
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
+}

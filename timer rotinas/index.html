@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Tracking Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="dashboard">
+    <!-- User Profile Card -->
+    <article class="card profile-card">
+      <div class="profile-info">
+        <img src="https://i.pravatar.cc/100?img=12" alt="Jeremy Robson" class="avatar">
+        <div class="profile-text">
+          <p class="subtitle">Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="profile-timeframes">
+        <button class="timeframe-btn">Daily</button>
+        <button class="timeframe-btn active">Weekly</button>
+        <button class="timeframe-btn">Monthly</button>
+      </div>
+    </article>
+
+    <!-- Work Card -->
+    <article class="card activity-card work">
+      <div class="card-bg"></div>
+      <div class="card-content">
+        <div class="card-header">
+          <h2>Work</h2>
+          <button class="menu-btn" aria-label="Opções">•••</button>
+        </div>
+        <div class="card-body">
+          <p class="current-time">32hrs</p>
+          <p class="previous-time">Last Week - 36hrs</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Play Card -->
+    <article class="card activity-card play">
+      <div class="card-bg"></div>
+      <div class="card-content">
+        <div class="card-header">
+          <h2>Play</h2>
+          <button class="menu-btn" aria-label="Opções">•••</button>
+        </div>
+        <div class="card-body">
+          <p class="current-time">10hrs</p>
+          <p class="previous-time">Last Week - 8hrs</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Study Card -->
+    <article class="card activity-card study">
+      <div class="card-bg"></div>
+      <div class="card-content">
+        <div class="card-header">
+          <h2>Study</h2>
+          <button class="menu-btn" aria-label="Opções">•••</button>
+        </div>
+        <div class="card-body">
+          <p class="current-time">4hrs</p>
+          <p class="previous-time">Last Week - 7hrs</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Exercise Card -->
+    <article class="card activity-card exercise">
+      <div class="card-bg"></div>
+      <div class="card-content">
+        <div class="card-header">
+          <h2>Exercise</h2>
+          <button class="menu-btn" aria-label="Opções">•••</button>
+        </div>
+        <div class="card-body">
+          <p class="current-time">4hrs</p>
+          <p class="previous-time">Last Week - 5hrs</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Social Card -->
+    <article class="card activity-card social">
+      <div class="card-bg"></div>
+      <div class="card-content">
+        <div class="card-header">
+          <h2>Social</h2>
+          <button class="menu-btn" aria-label="Opções">•••</button>
+        </div>
+        <div class="card-body">
+          <p class="current-time">5hrs</p>
+          <p class="previous-time">Last Week - 10hrs</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Self Care Card -->
+    <article class="card activity-card self-care">
+      <div class="card-bg"></div>
+      <div class="card-content">
+        <div class="card-header">
+          <h2>Self Care</h2>
+          <button class="menu-btn" aria-label="Opções">•••</button>
+        </div>
+        <div class="card-body">
+          <p class="current-time">2hrs</p>
+          <p class="previous-time">Last Week - 2hrs</p>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+</body>
+</html>
