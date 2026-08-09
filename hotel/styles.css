@@ -1,0 +1,522 @@
+@font-face{
+    font-family: 'DM Sans';
+    src: url('font/dm-sans/fonts/dm-sans/DMSans-VariableFont_opsz,wght.ttf');
+}
+
+@font-face{
+    font-family: 'Fraunces';
+    src: url('font/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght');
+}
+
+@font-face{
+    font-family: 'Fraunces Italic';
+    src:url('font/frauces/Fraunces-VariableFont_SOFT,WONK,opsz,wght');
+}
+
+@font-face{
+    font-family: 'DM Mono';
+    src: url('font/dm-mono/DM-Mono-Medium.ttf') format('truetype');
+}
+
+:root{
+/*cores*/
+    --bg-app: #f6f3ee;
+    --bg-sidebar: #f0ebe1;
+    --bg-card: #ffffff;
+    --bg-welcome: #bc4c25;
+    --bg-weather: #f3d483;
+
+    --text-main: #2b2623;
+    --text-muted: #8c827a;
+    --text-light: #ffffff;
+    --accent-rust: #be4b27;
+    --accent-blue: #2a52be;
+
+/*border*/
+    --border-light: #e5dec9;
+    --border-card: #ece6dc;
+
+/*fonts*/
+    --font-sans: 'DM Sans', sans-serif;
+    --font-serif: 'Fraunces', serif;
+    --font-serif-italic: 'Fraunces Italic', serif;
+    --font-mono: 'DM Mono', monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--bg-app);
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    max-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+/*layout*/
+.app-layout{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: 100vh;
+}
+
+.sidebar{
+    background-color: var(--bg-sidebar);
+    border-right: 1px solid var(--border-light);
+    padding: 2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.brand .logo{
+    height: 55px;
+    margin-bottom: 2.5rem;
+}
+
+.nav-menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.nav-menu a{
+    color: var(--text-main);
+    border-radius: 6px;
+    font-weight: 300;
+    padding: 1rem 0.65rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: background 0.2s;
+}
+
+.nav-menu li.active a,
+.nav-menu a:hover{
+    background-color: var(--bg-card);
+}
+
+.badge{
+    background-color: var(--accent-rust);
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+    color: var(--text-light);
+    border-radius: 50%;
+}
+
+/*weather*/
+.sidebar-footer{
+    margin-top:4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.weather-widget{
+    background-color: var(--bg-weather);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0.1rem -1rem;
+    flex: 1;
+
+}
+
+.widget-label{
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+}
+
+.temperature{
+    font-family: var(--font-serif);
+    font-size:0.55rem;
+    font-weight: bold;
+}
+
+.weather-desc{
+    font-size:0.55rem;
+    color: #5c4e28;
+}
+
+/*address*/
+.hotel-address{
+    font-family: var(--fono-mono);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.2;
+}
+
+/*main*/
+.main-content{
+    padding: 2.5rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+/*header principal*/
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.booking-status{
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+}
+
+.header-text h1{
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.header-text h1 em{
+    font-family: var(--font-serif-italic);
+    color: var(--accent-rust);
+}
+
+.header-action{
+    display: flex;
+    gap: 0.75rem;
+}
+
+.btn{
+    color: var(--text-muted);
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 0.85rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.btn:hover{
+    color: var(--text-main);
+}
+
+.btn-secondary{
+    background-color: #eae3d7;
+    color: var(--text-muted)
+}
+
+.btn-primary{
+    background-color: #eae3d7;;
+    color: var(--text-muted);
+}
+
+/*cartoes*/
+.card-fan-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.card-wrapper{
+    weight: 620px;
+    height: 380px;
+    position:relative;
+}
+
+.card{
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition:  transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.receipt-card{
+    background-color: var(--bg-card);
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    box-shadow: 0 13px 25px rgba(0,0,0,0.05);
+
+    display: flex;
+    jusify-content: space-between;
+    flex-direction: column;
+
+    left: 80px;
+    top: 10px;
+    transtion: rotate(-6deg);
+
+}
+
+.receipt-card,
+.card-header,
+.dates-grid,
+.receipt-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-wrapper:hover .receipt-card {
+    transform: translateX(-60px) rotate(-10px)
+}
+
+.date-value{
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.breakdown-list li{
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.receipt-total{
+    font-weight: bold;
+    padding-top: 1.2rem;
+    border-top: 2px dashed #ccc;
+
+    display: flex;
+    justify-content: space-between;
+}
+.total-label,
+.total-value{
+    font-size: 1.3rem;
+}
+
+/*cartao de boas vindas*/
+.welcome-card{
+    background-color: var(--bg-welcome);
+    color: var(--text-light);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    right: 120px;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: rotate(3deg);
+}
+
+.welcome-card .card-sublitle{
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    opacity:0.8;
+}
+
+.card-wrapper:hover .welcome-card{
+    transform: translateX(60px) rotate (6deg);
+}
+
+.host-note-title{
+    font-family: var(--font-sans-italic);
+    font-size: 1.2rem;
+}
+
+.host-name{
+    font-family: var(--font-sans-italic);
+    font-size: 2.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.host-message{
+    font-size:1rem;
+    line-height:1.2;
+    opacity: 0.9;
+}
+
+.welcome-card .card-footer{
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    padding-top: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* info cards*/
+.info-grid{
+    display: grid;
+    grid-template-columns: repaet(3,1fr);
+    gap: 1.5rem;
+}
+
+.info-card{
+    background-color: var(--bg-card);
+    border-radius: 14px;
+    padding: 1.7rem;
+    border: 2px solid var(--border-card);
+    display: flex;
+    flex-direction: column;
+    gap: 1;
+}
+
+
+.info-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.info-tag{
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    gap: 0.4;
+}
+
+.info-card h3{
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.info-sub{
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.info-text{
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.2;
+}
+
+
+/*wifi*/
+.wifi-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 1;
+    margin-top:1rem;
+    align-items: center;
+}
+
+.wifi-row{
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    background-color: #f8f6f2;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    margin: 0.5rem 0.7rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-text{
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-family:var(--font-serif);
+    padding: 0.5rem 0.8rem
+}
+
+.copy-field{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family:var(--font-mono);
+    padding: 0.5rem 0.8rem;
+ }
+
+.copy-field{
+    display: flex;
+    align-items: center;
+    gap: 0.rem;
+}
+
+.btn-copy{
+    background-color: none;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*breakfast*/
+
+
+
+.tag-arrival { background-color: #fbebe6; color: var(--accent-rust); }
+
+
+@media (max-width: 900px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none; /* Em telas menores, pode ser adaptado com um menu hambúrguer */
+  }
+
+  .main-content {
+    padding: 1.5rem;
+  }
+
+  .top-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .cards-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    transform: none !important;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
